@@ -1,0 +1,115 @@
+//NAVIGATION
+
+@media (min-width: 770px) {
+    .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: $stark;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: 1px;
+    
+}
+    
+    
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: darken($stark,17%);
+    
+    background-color: transparent;  
+}  
+    
+    .navbar-default .navbar-nav>li>a {
+    color: $stark;
+    transition: color .4s ease-in-out;
+        }
+    
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: darken($stark,17%);
+   
+    
+    background-color: transparent;
+}
+    
+    .navbar-nav {
+    margin-top: 15px;
+        margin-left: 0;
+    float: right;
+    line-height: 25px;
+        
+    }
+
+
+
+//LOGO
+    .navbar-brand{
+        line-height: 5px;
+        padding: 20px 30px;
+        .logo{
+        width: 30%;
+        height: auto;
+        opacity: .9;
+        @include rotate;    
+        }
+        .logo-blk{
+            visibility: hidden;
+        }
+    }
+
+}
+//SMALL SCREENS
+
+@media (max-width: 770px) {
+    
+        //LOGO
+    .navbar-brand{
+
+        line-height: 10px;
+        padding: 5px 15px;
+        .logo-blk{
+        visibility: visible;
+        width: 15%;
+        height: auto;
+        opacity: 1;
+        }
+        .logo{
+            display: none;
+        }
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        color: #000;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1em;
+        
+    }
+    
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: $charcoal;
+    background-color: $stark;
+        
+    }
+    
+    .navbar-default {
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        opacity: .9;
+        
+        
+    }
+    
+//TOGGLE BUTTON
+    .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+    .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+    }
