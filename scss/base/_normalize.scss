@@ -108,10 +108,10 @@ section {
     border-radius: 50%;
      float: left;
     background: #fff;
-    -webkit-shape-outside:circle();
-    -moz-shape-outside:circle();
-    -o-shape-outside:circle();
-    shape-outside:circle();
+    -webkit-shape-outside:circle(50%);
+    -moz-shape-outside:circle(50%);
+    -o-shape-outside:circle(50%);
+    shape-outside:circle(50%);
     margin-right: 20px;
 }
 
@@ -149,5 +149,18 @@ section {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+//LINKS
+
+a:link,a:visited{
+    text-decoration: none;
+    color: #B1B1B1;
+    transition: color .4s ease-in-out;
+}
+
+a:hover{
+    color: $charcoal;
+    
 }
 
